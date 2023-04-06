@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Paprika', cursive;
+}
+
+#logo {
+    width: 120px;
+    margin-left: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#logo:hover {
+    cursor: pointer;
+}
+
+#header {
+    display: flex;
+    background-color: #F7E1EF;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+#nav-header {
+    margin-right: 50px;
+    width: fit-content;
+}
+
+#nav-header #ul-nav {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+#nav-header #ul-nav a {
+    color: #000;
+    font-size: 20px;
+}
+
+#nav-header #ul-nav a:hover {
+    color: #D9779F;
+}
+
