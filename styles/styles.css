@@ -3,24 +3,9 @@
     padding: 0;
 }
 
-body {
-    font-family: 'Paprika', cursive;
-}
+/* INICIO DE HEADER*/
 
-#logo {
-    width: 180px;
-    margin-left: 50px;
-}
-
-a {
-    text-decoration: none;
-}
-
-#logo:hover {
-    cursor: pointer;
-}
-
-#header {
+#header{
     display: flex;
     background-color: #F7E1EF;
     flex-direction: row;
@@ -29,18 +14,32 @@ a {
     padding: 5px;
 }
 
-#nav-header {
+#logo{
+    width: 180px;
+    margin-left: 50px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#logo:hover{
+    cursor: pointer;
+}
+
+#nav-header{
     margin-right: 50px;
     width: fit-content;
 }
 
-#nav-header #ul-nav {
+#nav-header #ul-nav{
     display: flex;
     list-style: none;
     gap: 30px;
 }
 
-#nav-header #ul-nav a {
+#nav-header #ul-nav a{
+    font-family: 'Paprika', cursive;
     color: #000;
     font-size: 15px;  
     transition: all 300ms;
@@ -50,20 +49,32 @@ a {
     color: #D9779F;
 }
 
-#jumbotron #info-jumbotron h1{
+/* INICIO DE JUMBOTRON*/
+
+#jumbotron{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+#jumbotron #jumbotron-h1 h1{
     font-family: 'Paprika', cursive;
 }
 
 #jumbotron #info-jumbotron p{
     font-family: 'Bad Script', cursive;
     font-size: 20px;
+    text-align: justify;
 }
 
 #jumbotron #info-jumbotron button{
     background-color: transparent;
     border: 2px solid #D9779F;
     border-radius: 50px;
-    padding: 10px;
+    padding: 10px 30px;
     font-family: 'Paprika', cursive;
     font-size: 15px;
     color: #D9779F;
@@ -73,17 +84,10 @@ a {
 
 #jumbotron #info-jumbotron button:hover{
     cursor: pointer;
-    background-color: #F7E1EF;
-    box-shadow: 0px 2px 5px #272727;
+    /* background-color: #F7E1EF; */
+    box-shadow: 0px 2px 5px grey;
 }
 
-#jumbotron {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-}
 
 #jumbotron-h1 h1{
     margin: 50px 0px;
@@ -111,4 +115,129 @@ a {
 
 #jumbotron #jumbotron-container #container-img img {
     width: 600px;
+}
+
+/*INICIO DE BLOG/CATALOGO CON GRID*/
+
+#blog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: 
+        "header header header"
+        "card card card"
+    ;
+    justify-items: center;
+    height: 900px;
+    width: 100%;
+}
+
+#blog-info{
+    grid-area: header;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: max-content;
+    background-color: #D9779F;
+    padding: 20px 0px;
+}
+
+#blog-info h2{
+    font-family: 'Paprika', cursive;
+    font-size: 30px;
+    color: #F7E1EF;
+    text-shadow: 1px 1px 3px grey;
+}
+
+#blog-info p{
+    font-family: 'Bad Script', cursive;
+    color: #F7E1EF;
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+}
+
+.container-cards{
+    grid-area: card;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+}
+
+.container-cards .blog-card{
+    padding: 15px;
+    width: 85%;
+    height: 500px;
+    justify-self: center;
+    text-align: center;
+    box-shadow: 1px 1px 3px grey;
+    border-radius: 10px;
+}
+
+.container-cards .blog-card:hover{
+    box-shadow: 2px 2px 5px grey;
+}
+
+.container-cards .blog-card img{
+    width: 80%;
+}
+
+.container-cards .blog-card ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    list-style: none;
+    height: 250px;
+    align-items: start;
+}
+
+.container-cards .blog-card #ul-bebe li{
+    font-family: 'Bad Script', cursive;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: #B4E4A0;
+    height: max-content;
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+    box-shadow: 1px 1px 3px grey;
+}
+
+.container-cards .blog-card #ul-ninio li{
+    font-family: 'Bad Script', cursive;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: #A7C0DB;
+    height: max-content;
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+    box-shadow: 1px 1px 3px grey;
+}
+
+.container-cards .blog-card #ul-adulto li{
+    font-family: 'Bad Script', cursive;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: #F9B0DE;
+    height: max-content;
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+    box-shadow: 1px 1px 3px grey;
+}
+
+.container-cards .blog-card p{
+    font-family: 'Bad Script', cursive;
+    font-size: 15px;
+    text-align: justify;
+}
+
+/* INICIO SECCIÓN ADICIONAL*/
+
+#contacto{
+    background-color: #F7E1EF;
+    display: flex;
+    flex-direction: row-reverse;
 }
