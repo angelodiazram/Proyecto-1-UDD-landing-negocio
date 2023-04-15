@@ -23,6 +23,10 @@ a{
     text-decoration: none;
 }
 
+ul{
+    list-style: none;
+}
+
 #logo:hover{
     cursor: pointer;
 }
@@ -84,7 +88,6 @@ a{
 
 #jumbotron #info-jumbotron button:hover{
     cursor: pointer;
-    /* background-color: #F7E1EF; */
     box-shadow: 0px 2px 5px grey;
 }
 
@@ -237,7 +240,179 @@ a{
 /* INICIO SECCIÓN ADICIONAL*/
 
 #contacto{
-    background-color: #F7E1EF;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../assets/img/fondo-rosa-patron.png);
+    background-size: cover;
+    align-items: center;    
+}
+
+#contacto #header-contacto{
+    width: 70%;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+#contacto #header-contacto h2{
+    font-family: 'Paprika', cursive;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px grey;
+}
+
+#contacto #header-contacto p{
+    font-family: 'Bad Script', cursive;
+    font-size: 25px;
+    text-shadow: 1px 1px 3px grey;
+}
+
+#contacto #container-form{
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10px;
 }
+
+#contacto #container-form #form{
+    width: 400px;
+}
+
+#contacto #container-form label{
+    font-family: 'Paprika', cursive;
+    text-shadow: 1px 1px 3px gray;
+}
+
+#contacto #container-form input{
+    border: none;
+    height: 30px;
+    border: 1px solid #F7E1EF;
+    border-radius: 10px;
+    font-family: 'Paprika', cursive;
+    padding: 5px;
+}
+
+#contacto #container-form [name="textarea"]{
+    border: 1px solid #F7E1EF;
+    border-radius: 10px;
+    font-family: 'Paprika', cursive;
+    padding: 5px;
+}
+
+#contacto #container-form [type="button"]{
+    position: relative;
+    left: 90px;
+    background-color: #F7E1EF;
+    border: 2px solid #D9779F;
+    border-radius: 50px;
+    padding: 2px 30px;
+    font-family: 'Paprika', cursive;
+    font-size: 15px;
+    color: #D9779F;
+    font-weight: 600;
+    transition: all 300ms;
+    width: fit-content;
+}
+
+#contacto #container-form [type="button"]:hover{
+    cursor: pointer;
+    box-shadow: 0px 2px 5px grey;
+}
+
+#contacto #container-form img{
+    width: 300px;
+    height: 300px;    
+}
+
+#contacto #container-form #form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+}
+
+/* INICIO FOOTER */
+
+#footer{
+    width: 100%;
+    height: 200px;
+    background-color: #A7C0DB;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#footer #logo-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer #logo-footer img{
+    width: 300px;
+    height: auto;
+}
+
+#footer #contacto-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+#footer  h2{
+    font-family: "Paprika", cursive;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: #fff;
+} 
+
+#footer #contacto-footer ul li{
+    font-family: 'Bad Script', cursive;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+#footer #redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+#footer #redes ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 40px;
+}
+
+#footer #redes ul i{
+    color: #fff;
+    font-size: 40px;
+    transition: all 300ms;
+}
+
+#footer #redes ul .fa-instagram:hover{
+    color: #DA00E4;
+}
+
+#footer #redes ul .fa-square-facebook:hover{
+    color: #1771E6;
+}
+
+#footer #redes ul .fa-youtube:hover{
+    color: #FF0000;
+}
+
+
+
+
+
+
+

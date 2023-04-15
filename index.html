@@ -13,6 +13,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Paprika&display=swap" rel="stylesheet">
     
+    <!-- Font Awesome -->
+
+    <script src="https://kit.fontawesome.com/cd0dbc4925.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Oils-Mamaternal</title>
 </head>
@@ -69,7 +73,7 @@
                         <li>Concentración</li>
                         <li>Golpes</li>
                     </ul>
-                    <p>Cada mezcla de rolones se prepara según la edad de cada bebé</p>
+                    <p>Cada mezcla de rolones se prepara según la edad de cada bebé.</p>
                 </div>
                 <div class="blog-card">
                     <img src="./assets/img/img-niño.png" alt="linea-niños">
@@ -88,7 +92,7 @@
                         <li>Respiratorio</li>
                         <li>Roquidos</li>
                     </ul>
-                    <p>Cada mezcla de rolones se preparan según la edad de cada niño, despues de los 8 años se usan las mismas cantidades en la mezcla</p>
+                    <p>Cada mezcla de rolones se preparan según la edad de cada niño, despues de los 8 años se usan las mismas cantidades en la mezcla.</p>
                 </div>
                 <div class="blog-card">
                     <img src="./assets/img/img-adulto.png" alt="linea-adulto">
@@ -108,28 +112,58 @@
                         <li>Insomnio</li>
                         <li>Ansiedad</li>
                     </ul>
-                    <p>Todas las mezclas en adultos tienen las mismas cantidades</p>
+                    <p>Todas las mezclas en adultos tienen las mismas cantidades de aceites esenciales.</p>
                 </div>
             </div>
         </section>
         <!-- Fin blog/catalogo -->
         <!-- Inicio sección adicional -->
         <section id="contacto">
-            <form action="#">
-                <label for="name">Nombre y apelido</label>
-                <input type="text" name="name">
-
-                <label for="email">Email</label>
-                <input type="email" name="email">
+            <header id="header-contacto">
+                <h2>Haz tu solicitud</h2>
+                <p>Por este medio puedes contactarte con nosotros, comentarnos tu necesidad o la de tus hijos para que podamos evaluar que tipo de mezcla es la que mejor se adecua al problema</p>
+            </header>
+            <div id="container-form">
+                <form id="form" action="#">
+                    <label for="name">Nombre y apelido</label>
+                    <input type="text" name="name">
                 
-                <label for="textarea"></label>
-                <textarea name="textarea" cols="30" rows="10">
-                    ingresa tu solicitud
-                </textarea>
-            </form>
-            <img src="./assets/img/logo-mamaternal.png" alt="">
+                    <label for="email">Email</label>
+                    <input type="email" name="email">
+                    
+                    <label for="textarea"></label>
+                    <textarea name="textarea" cols="30" rows="10" placeholder="Cuentanos tu caso"></textarea>
+
+                    <input type="button" value="ENVIAR">
+                </form>
+                <img src="./assets/img/logo-sombra.png" alt="">
+            </div>
         </section>
         <!-- Fin sección adicional -->
+        <!-- Inicio footer -->
+        <footer id="footer">
+            <div id="logo-footer">
+                <img src="./assets/img/logo-blanco.png" alt="">
+            </div>
+            <div id="contacto-footer">
+                <h2>Contacto</h2>
+                <ul>
+                    <li>catalinaadarosb@gmail.com</li>
+                    <li>+569 42464247</li>
+                    <li>Santiago de Chile, Ñuñoa</li>
+                </ul>
+            </div>
+            <div id="redes">
+                <h2>Siguenos</h2>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+        <!-- Fin footer -->
+
     </main>
 </body>
 </html>
