@@ -431,6 +431,8 @@ ul{
 /*! SECCIÓN DE MEDIA QUERYS */
 
 @media (max-width: 980px){
+
+    /*? MENÚ RESPONSIVO A PARTIR DE UN MAX WIDTH DE 980PX DE PANTALLA*/
     #header #nav-header{
         display: block;
     }
@@ -455,7 +457,7 @@ ul{
         position: fixed;
         width: 100%;
         top: 85px;
-        left: 100%;
+        left: 103%;
         background-color: #F7E1EF;
         transition: left 300ms;
         height: 240px;
@@ -465,7 +467,6 @@ ul{
     #header #nav-header #ul-nav{
         flex-direction: column;
         align-items: start;
-        /* width: 100%; */
         padding: 15px;   
     }
 
