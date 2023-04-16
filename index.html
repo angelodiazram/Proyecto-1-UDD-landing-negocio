@@ -13,6 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Paprika&display=swap" rel="stylesheet">
     
+    <!-- Icono menú -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+
     <!-- Font Awesome -->
 
     <script src="https://kit.fontawesome.com/cd0dbc4925.js" crossorigin="anonymous"></script>
@@ -29,13 +32,19 @@
             </div>
             <nav id="nav-header">
                 <ul id="ul-nav">
-                    <li class="li-nav"><a href="#">Acerca de Mamaternal</a></li>
+                    <li class="li-nav"><a href="#">Nosotros</a></li>
                     <li class="li-nav"><a href="#">Productos</a></li>
-                    <li class="li-nav"><a href="#">Nuestras Lineas</a></li>
+                    <li class="li-nav"><a href="#">Solicitud</a></li>
+                    <li class="li-nav"><strong><a href="#" class="cuenta">Iniciar sesión</a></strong></li>
+                    <li class="li-nav"><strong><a href="#" class="cuenta">Registrate</a></strong></li>
                 </ul>
             </nav>
+            <div id="sandwitch">
+                <span class="material-symbols-outlined menu">menu</span>
+            </div>
         </header>
         <!-- fin header -->
+        <div id="box"></div>
         <!-- inicio jumbotron -->
         <article id="jumbotron">
             <div id="jumbotron-h1">
@@ -56,7 +65,7 @@
         <!-- Inicio blog/catalogo -->
         <section id="blog">
             <div id="blog-info">
-                <h2>Nuestras lineas de productos</h2>
+                <h2>Nuestros productos</h2>
                 <p>Si bien, nuestro producto comenzó con un enfoque en bebés, actualmente también tenemos una línea de aceites para niños y otra para adultos como alternativas naturales para mejorar la calidad de vida.</p>
             </div>
             <div class="container-cards">
@@ -134,7 +143,7 @@
                     <label for="textarea"></label>
                     <textarea name="textarea" cols="30" rows="10" placeholder="Cuentanos tu caso"></textarea>
 
-                    <input type="button" value="ENVIAR">
+                    <input type="button" value="Enviar">
                 </form>
                 <img src="./assets/img/logo-sombra.png" alt="">
             </div>
@@ -163,7 +172,7 @@
             </div>
         </footer>
         <!-- Fin footer -->
-
     </main>
+    <script src="./js/index.js"></script>
 </body>
 </html>

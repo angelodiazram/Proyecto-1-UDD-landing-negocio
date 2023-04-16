@@ -5,6 +5,10 @@
 
 /* INICIO DE HEADER*/
 
+#sandwitch{
+    display: none;
+}
+
 #header{
     display: flex;
     background-color: #F7E1EF;
@@ -12,6 +16,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 5px;
+    position: fixed;
+    width: 100%;
+    height: fit-content;
 }
 
 #logo{
@@ -39,7 +46,7 @@ ul{
 #nav-header #ul-nav{
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 25px;
 }
 
 #nav-header #ul-nav a{
@@ -51,6 +58,17 @@ ul{
 
 #nav-header #ul-nav a:hover{
     color: #D9779F;
+}
+
+#nav-header #ul-nav .cuenta:hover{
+    text-shadow: 1px 1px 3px grey;
+    color: #000;
+}
+
+#box{
+    width: 100%;
+    height: 85px;
+    background-color: #F9B0DE;
 }
 
 /* INICIO DE JUMBOTRON*/
@@ -241,7 +259,7 @@ ul{
 
 #contacto{
     width: 100%;
-    height: 700px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     background-image: url(../assets/img/fondo-rosa-patron.png);
@@ -275,6 +293,7 @@ ul{
     flex-wrap: wrap;
     width: 100%;
     margin-top: 10px;
+    padding-bottom: 30px;
 }
 
 #contacto #container-form #form{
@@ -303,9 +322,8 @@ ul{
 }
 
 #contacto #container-form [type="button"]{
-    position: relative;
-    left: 90px;
-    background-color: #F7E1EF;
+    align-self: center;
+    background-color: #fff;
     border: 2px solid #D9779F;
     border-radius: 50px;
     padding: 2px 30px;
@@ -408,6 +426,107 @@ ul{
 
 #footer #redes ul .fa-youtube:hover{
     color: #FF0000;
+}
+
+/*! SECCIÓN DE MEDIA QUERYS */
+
+@media (max-width: 980px){
+    #header #nav-header{
+        display: block;
+    }
+
+    #sandwitch{
+        display: block;
+        position: relative;
+        right: 50px;
+    }
+    
+    #sandwitch .menu{
+        font-size: 60px;
+        transition: all 300ms;
+    }
+
+    #sandwitch .menu:hover{
+        color: #D9779F;
+        cursor: pointer;
+    }
+
+    #header #nav-header{
+        position: fixed;
+        width: 100%;
+        top: 85px;
+        left: 100%;
+        background-color: #F7E1EF;
+        transition: left 300ms;
+        height: 240px;
+        box-shadow: -1px 1px 3px grey;
+    }
+
+    #header #nav-header #ul-nav{
+        flex-direction: column;
+        align-items: start;
+        /* width: 100%; */
+        padding: 15px;   
+    }
+
+    #header #nav-header.visible{
+        left: 75%;
+    }
+
+    /* RESPONSIVE CATALOGO */
+
+    #blog{
+        height: fit-content;
+        margin-bottom: 30px;
+    }
+
+    #blog #blog-info{
+        padding: 10px 0px;
+    }
+
+    #blog #blog-info p{
+        width: 80%;
+    }
+
+    .container-cards{
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 50%;
+        margin-top: -350px;
+    }
+
+    .container-cards .blog-card{
+        height: fit-content;
+    }
+}
+
+@media (max-width: 768px){
+    .container-cards{
+        margin-top: -340px;
+        width: 60%;
+    }
+}
+
+@media (max-width: 576px){
+    #jumbotron #jumbotron-container{
+        width: 80%;
+    }
+
+    #jumbotron #jumbotron-container #container-img img{
+        width: 100%;
+    } 
+    
+    #footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        height: fit-content;
+    }    
+
+    .container-cards{
+        margin-top: -280px;
+        width: 60%;
+    }
 }
 
 
